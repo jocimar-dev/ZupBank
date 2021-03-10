@@ -1,5 +1,9 @@
 fun main() {
-    println("Bem vindo ao Bytebank")
-
+    testaAutenticacao()
+    testaCondicoes(saldo = 100.0)
+    testaLacos()
+    testaCopiasEReferencias()
     testaComportamentosConta()
+    testaFuncionarios()
+
 }

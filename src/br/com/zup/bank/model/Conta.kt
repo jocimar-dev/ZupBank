@@ -1,3 +1,5 @@
+package br.com.zup.bank.model
+
 abstract class Conta(
     var titular: String,
     val numero: Int
@@ -13,7 +15,7 @@ abstract class Conta(
 
     abstract fun saca(valor: Double)
 
-    fun transfere(valor: Double, destino: Conta): Boolean {
+    fun transfere(valor: Double, destino: br.com.zup.bank.model.Conta): Boolean {
         if (saldo >= valor) {
             saldo -= valor
             destino.deposita(valor)

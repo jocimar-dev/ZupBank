@@ -1,10 +1,11 @@
-class Diretor(
+package br.com.zup.bank.model
+
+class Gerente(
     nome: String,
     cpf: String,
     salario: Double,
-    senha: Int,
-    val plr: Double
-) : FuncionarioAdmin(
+    senha: Int
+) : br.com.zup.bank.model.FuncionarioAdmin(
     nome = nome,
     cpf = cpf,
     salario = salario,
@@ -13,7 +14,7 @@ class Diretor(
 
     override val bonificacao: Double
         get() {
-            return salario + plr
+            return salario
         }
 
 }

@@ -1,3 +1,5 @@
+package br.com.zup.bank.model
+
 abstract class Funcionario(
     val nome: String,
     val cpf: String,

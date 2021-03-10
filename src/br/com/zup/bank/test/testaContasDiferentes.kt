@@ -1,11 +1,11 @@
 fun testaContasDiferentes() {
-    val contaCorrente = ContaCorrente(
-        titular = "Alex",
-        numero = 1000
+    val contaCorrente = br.com.zup.bank.model.ContaCorrente(
+            titular = "Alex",
+            numero = 1000
     )
-    val contaPoupanca = ContaPoupanca(
-        titular = "Fran",
-        numero = 1001
+    val contaPoupanca = br.com.zup.bank.model.ContaPoupanca(
+            titular = "Fran",
+            numero = 1001
     )
 
     contaCorrente.deposita(1000.0)

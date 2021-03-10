@@ -1,7 +1,9 @@
+package br.com.zup.bank.model
+
 class ContaPoupanca(
     titular: String,
     numero: Int
-) : Conta(
+) : br.com.zup.bank.model.Conta(
     titular = titular,
     numero = numero
 ) {

@@ -1,8 +1,15 @@
+package br.com.zup.bank.test
+
+import br.com.zup.bank.model.Analista
+import br.com.zup.bank.model.CalculadoraBonificacao
+import br.com.zup.bank.model.Diretor
+import br.com.zup.bank.model.Gerente
+
 fun testaFuncionarios() {
-    val alex = br.com.zup.bank.model.Analista(
-            nome = "Alex",
-            cpf = "111.111.111-11",
-            salario = 1000.0
+    val alex = Analista(
+        nome = "Alex",
+        cpf = "111.111.111-11",
+        salario = 1000.0
     )
 
     println("nome ${alex.nome}")
@@ -10,11 +17,11 @@ fun testaFuncionarios() {
     println("salario ${alex.salario}")
     println("bonificação ${alex.bonificacao}")
 
-    val fran = br.com.zup.bank.model.Gerente(
-            nome = "Fran",
-            cpf = "222.222.222-22",
-            salario = 2000.0,
-            senha = 1234
+    val fran = Gerente(
+        nome = "Fran",
+        cpf = "222.222.222-22",
+        salario = 2000.0,
+        senha = 1234
     )
 
     println("nome ${fran.nome}")
@@ -28,12 +35,12 @@ fun testaFuncionarios() {
         println("falha na autenticação")
     }
 
-    val gui = br.com.zup.bank.model.Diretor(
-            nome = "Gui",
-            cpf = "333.333.333-33",
-            salario = 4000.0,
-            senha = 4000,
-            plr = 200.0
+    val gui = Diretor(
+        nome = "Gui",
+        cpf = "333.333.333-33",
+        salario = 4000.0,
+        senha = 4000,
+        plr = 200.0
     )
 
     println("nome ${gui.nome}")
@@ -48,13 +55,13 @@ fun testaFuncionarios() {
         println("falha na autenticação")
     }
 
-    val maria = br.com.zup.bank.model.Analista(
-            nome = "Maria",
-            cpf = "444.444.444-44",
-            salario = 3000.0
+    val maria = Analista(
+        nome = "Maria",
+        cpf = "444.444.444-44",
+        salario = 3000.0
     )
 
-    val calculadora = br.com.zup.bank.model.CalculadoraBonificacao()
+    val calculadora = CalculadoraBonificacao()
     calculadora.registra(alex)
     calculadora.registra(fran)
     calculadora.registra(gui)

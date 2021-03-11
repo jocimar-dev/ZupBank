@@ -5,7 +5,7 @@ class Gerente(
     cpf: String,
     salario: Double,
     senha: Int
-) : br.com.zup.bank.model.FuncionarioAdmin(
+) : FuncionarioAdmin(
     nome = nome,
     cpf = cpf,
     salario = salario,

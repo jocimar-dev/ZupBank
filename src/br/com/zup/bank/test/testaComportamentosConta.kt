@@ -1,8 +1,19 @@
+package br.com.zup.bank.test
+
+import br.com.zup.bank.model.Cliente
+import br.com.zup.bank.model.ContaCorrente
+import br.com.zup.bank.model.ContaPoupanca
+
 fun testaComportamentosConta() {
-    val contaAlex = br.com.zup.bank.model.ContaCorrente(titular = "Alex", numero = 1000)
+
+    val alex = Cliente(nome = "Alex", cpf = "", senha = 1)
+
+    val contaAlex = ContaCorrente(titular = alex, numero = 1000)
     contaAlex.deposita(200.0)
 
-    val contaFran = br.com.zup.bank.model.ContaPoupanca(numero = 1001, titular = "Fran")
+    val fran = Cliente(nome = "Fran", cpf = "", senha = 2)
+
+    val contaFran = ContaPoupanca(numero = 1001, titular = fran)
     contaFran.deposita(300.0)
 
     println(contaFran.titular)

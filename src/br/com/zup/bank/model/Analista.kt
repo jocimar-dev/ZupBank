@@ -4,7 +4,7 @@ class Analista(
     nome: String,
     cpf: String,
     salario: Double
-) : br.com.zup.bank.model.Funcionario(
+) : Funcionario(
     nome = nome,
     cpf = cpf,
     salario = salario

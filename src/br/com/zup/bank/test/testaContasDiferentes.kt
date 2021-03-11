@@ -1,11 +1,34 @@
+package br.com.zup.bank.test
+
+import br.com.zup.bank.model.Cliente
+import br.com.zup.bank.model.ContaCorrente
+import br.com.zup.bank.model.ContaPoupanca
+import br.com.zup.bank.model.Endereco
+
 fun testaContasDiferentes() {
-    val contaCorrente = br.com.zup.bank.model.ContaCorrente(
-            titular = "Alex",
-            numero = 1000
+    val contaCorrente = ContaCorrente(
+        titular = Cliente(
+            nome = "Alex",
+            cpf = "111.111.111-11",
+            senha = 1,
+            endereco = Endereco(
+                logradouro = "Rua Vergueiro"
+            )
+        ),
+        numero = 1000
     )
-    val contaPoupanca = br.com.zup.bank.model.ContaPoupanca(
-            titular = "Fran",
-            numero = 1001
+    println("titular ${contaCorrente.titular}")
+    println("nome do titular ${contaCorrente.titular.nome}")
+    println("cpf do titular ${contaCorrente.titular.cpf}")
+    println("endereco titular ${contaCorrente.titular.endereco}")
+
+    val contaPoupanca = ContaPoupanca(
+        titular = Cliente(
+            nome = "Fran",
+            cpf = "",
+            senha = 2
+        ),
+        numero = 1001
     )
 
     contaCorrente.deposita(1000.0)

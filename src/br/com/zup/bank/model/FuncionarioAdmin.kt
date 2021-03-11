@@ -5,11 +5,11 @@ abstract class FuncionarioAdmin(
     cpf: String,
     salario: Double,
     protected val senha: Int
-) : br.com.zup.bank.model.Funcionario(
+) : Funcionario(
     nome = nome,
     cpf = cpf,
     salario = salario
-), br.com.zup.bank.model.Autenticavel {
+), Autenticavel {
 
     override fun autentica(senha: Int): Boolean {
         if(this.senha == senha){

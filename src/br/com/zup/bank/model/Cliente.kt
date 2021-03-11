@@ -1,10 +1,11 @@
 package br.com.zup.bank.model
 
 class Cliente(
-    val nome: String,
+    var nome: String,
     val cpf: String,
+    var endereco: Endereco = Endereco(),
     private val senha: Int
-) : br.com.zup.bank.model.Autenticavel {
+) : Autenticavel {
 
     override fun autentica(senha: Int): Boolean {
         if(this.senha == senha){

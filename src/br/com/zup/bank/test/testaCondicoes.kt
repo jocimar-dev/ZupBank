@@ -1,4 +1,4 @@
-package br.com.alura.bytebank.teste
+package br.com.zup.bank.test
 
 fun testaCondicoes(saldo: Double) {
     if (saldo > 0.0) {

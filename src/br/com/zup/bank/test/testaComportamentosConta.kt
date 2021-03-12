@@ -1,5 +1,7 @@
 package br.com.zup.bank.test
 
+import br.com.zup.bank.exception.FalhaAutenticacaoException
+import br.com.zup.bank.exception.SaldoInsuficienteException
 import br.com.zup.bank.model.Cliente
 import br.com.zup.bank.model.ContaCorrente
 import br.com.zup.bank.model.ContaPoupanca
@@ -50,10 +52,20 @@ fun testaComportamentosConta() {
 
     println("Transferência da conta da Fran para o Alex")
 
-    if (contaFran.transfere(destino = contaAlex, valor = 300.0)) {
+    try {
+        contaFran.transfere(destino = contaAlex, valor = 250.0, senha = 2)
         println("Transferência sucedida")
-    } else {
+    } catch (e: SaldoInsuficienteException){
         println("Falha na transferência")
+        println("Saldo insuficiente")
+        e.printStackTrace()
+    } catch (e: FalhaAutenticacaoException){
+        println("Falha na transferência")
+        println("Falha na autenticação")
+        e.printStackTrace()
+    } catch (e: Exception){
+        println("Erro desconhecido")
+        e.printStackTrace()
     }
 
     println(contaAlex.saldo)

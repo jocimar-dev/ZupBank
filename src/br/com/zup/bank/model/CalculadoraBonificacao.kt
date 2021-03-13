@@ -5,7 +5,7 @@ class CalculadoraBonificacao {
     var total: Double = 0.0
         private set
 
-    fun registra(funcionario: Funcionario) {
+    fun registra(funcionario: br.com.zup.bank.model.Funcionario) {
         this.total += funcionario.bonificacao
     }
 

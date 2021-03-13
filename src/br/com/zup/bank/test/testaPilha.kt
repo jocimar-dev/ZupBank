@@ -2,7 +2,6 @@ package br.com.zup.bank.test
 
 import br.com.zup.bank.exception.SaldoInsuficienteException
 
-
 fun funcao1() {
     println("início funcao1")
     try {

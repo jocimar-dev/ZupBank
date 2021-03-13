@@ -1,12 +1,11 @@
 package br.com.zup.bank
 
-import br.com.zup.bank.br.com.zup.bank.test.testaHof
 import br.com.zup.bank.model.Cliente
 import br.com.zup.bank.model.ContaPoupanca
-import br.com.zup.bank.model.Endereco
+import br.com.zup.bank.test.testaHOF
 
 fun main() {
-    testaHof()
+    testaHOF()
 }
 
 fun testaRun() {
@@ -34,7 +33,7 @@ fun testaRun() {
 }
 
 fun testaWith() {
-    with(Endereco()) {
+    with(br.com.zup.bank.model.Endereco()) {
         logradouro = "rua vergueiro"
         numero = 3185
         bairro = "Vila Mariana"

@@ -1,10 +1,12 @@
-package br.com.zup.bank.test
+package br.com.zup.bank.teste
 
 import br.com.zup.bank.exception.FalhaAutenticacaoException
 import br.com.zup.bank.exception.SaldoInsuficienteException
 import br.com.zup.bank.model.Cliente
 import br.com.zup.bank.model.ContaCorrente
 import br.com.zup.bank.model.ContaPoupanca
+import java.lang.Exception
+import java.lang.NumberFormatException
 
 fun testaComportamentosConta() {
 

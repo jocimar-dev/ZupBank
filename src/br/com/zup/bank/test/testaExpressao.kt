@@ -1,7 +1,5 @@
 package br.com.zup.bank.test
 
-import java.lang.NumberFormatException
-
 fun testaExpressao() {
     val entrada: String = "1.0"
 

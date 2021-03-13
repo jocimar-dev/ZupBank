@@ -1,7 +1,6 @@
 package br.com.zup.bank.test
 
 import br.com.zup.bank.model.Cliente
-import br.com.zup.bank.model.Diretor
 import br.com.zup.bank.model.Gerente
 import br.com.zup.bank.model.SistemaInterno
 
@@ -12,7 +11,7 @@ fun testaAutenticacao() {
         salario = 1000.0,
         senha = 1000
     )
-    val diretora = Diretor(
+    val diretora = br.com.zup.bank.model.Diretor(
         nome = "Fran",
         cpf = "222.222.222-22",
         salario = 2000.0,

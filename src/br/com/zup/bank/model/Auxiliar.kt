@@ -4,13 +4,13 @@ class Auxiliar(
     nome: String,
     cpf: String,
     salario: Double
-) : Funcionario(
+) : br.com.zup.bank.model.Funcionario(
     nome = nome,
     cpf = cpf,
     salario = salario
 ) {
     override val bonificacao: Double
-        get() = salario * 0.05 //To change initializer of created properties use File | Settings | File Templates.
+        get() = salario * 0.05 //Para alterar o inicializador das propriedades criadas, use Arquivo | Configurações | Modelos de arquivo.
 
 
 }

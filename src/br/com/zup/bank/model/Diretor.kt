@@ -6,7 +6,7 @@ class Diretor(
     salario: Double,
     senha: Int,
     val plr: Double
-) : FuncionarioAdmin(
+) : br.com.zup.bank.model.FuncionarioAdmin(
     nome = nome,
     cpf = cpf,
     salario = salario,

@@ -1,14 +1,12 @@
 package br.com.zup.bank.test
 
-import br.com.zup.bank.model.Endereco
-
 fun testaAny() {
-    val endereco = Endereco(
+    val endereco = br.com.zup.bank.model.Endereco(
         logradouro = "Rua vergueiro",
         complemento = "Alura",
         cep = "00000-0700"
     )
-    val enderecoNovo = Endereco(
+    val enderecoNovo = br.com.zup.bank.model.Endereco(
         logradouro = "Rua vergueiro",
         complemento = "Alura",
         cep = "00000-0700"

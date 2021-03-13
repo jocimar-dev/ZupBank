@@ -1,9 +1,8 @@
-package br.com.alura.bytebank.teste
+package br.com.zup.bank.test
 
 import br.com.zup.bank.model.Cliente
 import br.com.zup.bank.model.ContaCorrente
 import br.com.zup.bank.model.ContaPoupanca
-import br.com.zup.bank.model.Endereco
 
 fun testaContasDiferentes() {
     val contaCorrente = ContaCorrente(
@@ -11,7 +10,7 @@ fun testaContasDiferentes() {
             nome = "Alex",
             cpf = "111.111.111-11",
             senha = 1,
-            endereco = Endereco(
+            endereco = br.com.zup.bank.model.Endereco(
                 logradouro = "Rua Vergueiro"
             )
         ),
